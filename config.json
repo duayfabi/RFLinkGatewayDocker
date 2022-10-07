@@ -1,14 +1,14 @@
 {
-    "mqtt_host": "mqtt",
+    "mqtt_host": "localhost",
     "mqtt_port": 1883,
-    "mqtt_user": "myuser",
-    "mqtt_password": "secretpassword",
+    "mqtt_user": "",
+    "mqtt_password": "",
     "mqtt_prefix": "rflink",
     "mqtt_message_timeout": 60,
     "mqtt_switch_incl_topic": "true",
     "mqtt_json": "true",
-    "mqtt_include_message": "false",  
-    "rflink_tty_device": "/dev/ttyACM0",
+    "mqtt_include_message": "false",
+    "rflink_tty_device": "/dev/ttyUSB0",
     "rflink_output_params_processing": {
         "ID": [],
         "SWITCH": [],
@@ -46,10 +46,5 @@
         "RGBW": [],
         "message": []
       },
-    "rflink_ignored_devices": [
-      "Friedland", 
-      "Oregon Temp/FD10",
-      "BL999",
-      "RTS"
-    ]
+    "rflink_ignored_devices": []
   }
