@@ -7,13 +7,19 @@ Firstly to be able to run the RFLinkGateway as a docker instance, but also to ma
 ## Build
 ```sh
 Dockerfile
+Containerfile
 requirements.txt
 ```
-Is for the actual build of the docker image. But it is awailable for download [here](https://hub.docker.com/r/magpern/rflinkgateway) from DockerHub.
+Is for the actual build of the docker image. But it is awailable for download [here](https://github.com/duayfabi/RFLinkGateway) from DockerHub.
+
+Example of a buildah build command
+```sh
+buildah bud -t rflinkgateway
+```
 
 Example of a docker build command
 ```sh
-docker build -t "magpern/rflinkgateway" .
+docker build -t "rflinkgateway .
 ```
 
 ## More
@@ -43,6 +49,5 @@ If you already have a MQTT Broker. Modify the config.json for RFLinkGateway to p
 
 - RFLink Gateway project http://www.nemcon.nl/blog2/
 - RFLink Gateway protocol http://www.nemcon.nl/blog2/protref
-- dmartinpro/RFLinkGateway https://github.com/dmartinpro/RFLinkGateway
+- duayfabi/RFLinkGateway https://github.com/duayfabi/RFLinkGateway
 - Mosquitto Broker https://hub.docker.com/_/eclipse-mosquitto
-
